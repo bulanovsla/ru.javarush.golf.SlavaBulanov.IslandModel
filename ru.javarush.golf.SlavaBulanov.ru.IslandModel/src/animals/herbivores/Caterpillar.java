@@ -6,8 +6,12 @@ import java.util.List;
 
 public class Caterpillar extends Herbivore {
     private static final int MAX_COUNT_ON_LOCATION = 1000;
+    private static final double WEIGHT = 0.01;
+    private static final double MAX_FOOD_KG = 0;
+    private static final int MAX_MOVES = 0;
+
     public Caterpillar(Coordinate coordinate) {
-        super(0.01, 0, 0, coordinate);
+        super(WEIGHT, MAX_FOOD_KG, MAX_MOVES, coordinate);
     }
 
     @Override

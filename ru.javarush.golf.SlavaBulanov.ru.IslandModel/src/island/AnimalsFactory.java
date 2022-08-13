@@ -6,6 +6,8 @@ import plants.Plant;
 
 public interface AnimalsFactory {
     Predator createPredator(Coordinate coordinate);
+
     Herbivore createHerbivore(Coordinate coordinate);
+
     Plant createPlant();
 }

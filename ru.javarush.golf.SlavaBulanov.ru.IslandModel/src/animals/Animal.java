@@ -30,7 +30,7 @@ public abstract class Animal {
             Location newLocation = locations[newCoordinate.getLine()][newCoordinate.getColumn()];
             this.coordinate = newCoordinate;
             moveToAnotherLocation(currentLocation, newLocation);
-        } catch (Exception e){
+        } catch (Exception e) {
             //нельзя сделать ход
         }
     }

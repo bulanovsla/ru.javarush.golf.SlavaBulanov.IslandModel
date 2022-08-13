@@ -8,9 +8,12 @@ import java.util.List;
 
 public class Duck extends Herbivore {
     private static final int MAX_COUNT_ON_LOCATION = 200;
+    private static final double WEIGHT = 1;
+    private static final double MAX_FOOD_KG = 0.15;
+    private static final int MAX_MOVES = 4;
 
     public Duck(Coordinate coordinate) {
-        super(1, 0.15, 4, coordinate);
+        super(WEIGHT, MAX_FOOD_KG, MAX_MOVES, coordinate);
     }
 
     @Override

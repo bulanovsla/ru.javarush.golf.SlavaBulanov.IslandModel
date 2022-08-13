@@ -10,6 +10,7 @@ public class Coordinate {
         this.line = line;
         this.column = column;
     }
+
     public int getLine() {
         return line;
     }

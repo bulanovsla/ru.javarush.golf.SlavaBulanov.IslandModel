@@ -25,10 +25,12 @@ public class Wolf extends Predator {
     }
 
     private static final int MAX_COUNT_ON_LOCATION = 30;
-    private static final int WEIGHT = 50;
+    private static final double WEIGHT = 50;
+    private static final double MAX_FOOD_KG = 8;
+    private static final int MAX_MOVES = 8;
 
     public Wolf(Coordinate coordinate) {
-        super(WEIGHT, 8, 3, coordinate);
+        super(WEIGHT, MAX_FOOD_KG, MAX_MOVES, coordinate);
     }
 
     @Override

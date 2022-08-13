@@ -22,6 +22,7 @@ public abstract class Herbivore extends Animal {
             currentLocation.getPlants().remove(plant);
         }
     }
+
     public abstract void breed(List<Herbivore> herbivores);
 
     @Override

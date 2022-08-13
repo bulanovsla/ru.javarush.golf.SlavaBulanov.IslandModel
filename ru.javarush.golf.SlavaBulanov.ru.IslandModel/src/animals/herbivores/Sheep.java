@@ -6,9 +6,12 @@ import java.util.List;
 
 public class Sheep extends Herbivore {
     private static final int MAX_COUNT_ON_LOCATION = 140;
+    private static final double WEIGHT = 70;
+    private static final double MAX_FOOD_KG = 15;
+    private static final int MAX_MOVES = 3;
 
     public Sheep(Coordinate coordinate) {
-        super(70, 15, 3, coordinate);
+        super(WEIGHT, MAX_FOOD_KG, MAX_MOVES, coordinate);
     }
 
     @Override

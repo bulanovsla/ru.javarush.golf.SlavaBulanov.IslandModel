@@ -10,17 +10,20 @@ import java.util.Map;
 
 public class Bear extends Predator {
 
-        {
-            probability.put(Rabbit.class, 70);
-            probability.put(Mouse.class, 90);
-            probability.put(Duck.class, 60);
-            probability.put(Caterpillar.class, 40);
-        }
+    {
+        probability.put(Rabbit.class, 70);
+        probability.put(Mouse.class, 90);
+        probability.put(Duck.class, 60);
+        probability.put(Caterpillar.class, 40);
+    }
+
     private static final int MAX_COUNT_ON_LOCATION = 5;
+    private static final double WEIGHT = 500;
+    private static final double MAX_FOOD_KG = 80;
+    private static final int MAX_MOVES = 2;
 
-    public Bear (Coordinate coordinate) {
-
-        super(500, 80, 2, coordinate);
+    public Bear(Coordinate coordinate) {
+        super(WEIGHT, MAX_FOOD_KG, MAX_MOVES, coordinate);
     }
 
     @Override
